@@ -3,13 +3,10 @@
 /* ── CSS Variables ─────────────────────────────────────────── */
 :root {
     --primary-color: #1a5276;
-    /* deep river blue   */
     --secondary-color: #2e86c1;
-    /* mid water blue     */
     --accent1-color: #1b2631;
-    /* dark slate         */
     --accent2-color: #f0b429;
-    /* golden rapids      */
+
     --heading-font: "Georgia", "Times New Roman", serif;
     --body-font: "Trebuchet MS", Verdana, sans-serif;
 }
@@ -28,7 +25,7 @@ body {
     background-color: #f5f8fa;
 }
 
-/* ── Page width & centering ────────────────────────────────── */
+/* ── Page Width & Centering ───────────────────────────────── */
 header,
 main,
 footer {
@@ -36,14 +33,14 @@ footer {
     margin: 0 auto;
 }
 
-/* ── Headings ──────────────────────────────────────────────── */
+/* ── Headings ─────────────────────────────────────────────── */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-/* ── Spacing for common elements ───────────────────────────── */
+/* ── Common Element Spacing ───────────────────────────────── */
 nav,
 p,
 section,
@@ -52,155 +49,216 @@ article {
     padding: 8px;
 }
 
-/* ── Header ────────────────────────────────────────────────── */
+/* ── Header ───────────────────────────────────────────────── */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     background-color: var(--primary-color);
+
     padding: 12px 20px;
 }
 
+/* Logo */
 header img {
     height: 60px;
     width: auto;
 }
 
+/* Navigation */
 header nav {
     margin: 0;
     padding: 0;
+
     display: flex;
     gap: 20px;
 }
 
 header nav a {
     color: var(--accent2-color);
+
     text-decoration: none;
+
     font-weight: bold;
     letter-spacing: 0.05em;
     font-size: 0.95rem;
+
+    padding: 6px 10px;
+
+    transition: color 0.2s ease;
 }
 
 header nav a:hover {
-    color: #fff;
+    color: #ffffff;
     text-decoration: underline;
 }
 
-/* ── Hero div ──────────────────────────────────────────────── */
+/* ── Hero Section ─────────────────────────────────────────── */
 .hero {
     position: relative;
+    margin-bottom: 24px;
 }
 
+/* Hero background image */
 .hero img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-/* ── Hero h1 overlay ───────────────────────────────────────── */
-h1 {
+/* Hero heading overlay */
+.hero h1 {
     position: absolute;
     top: 20px;
+
     width: 100%;
+
     padding: 16px;
+
     text-align: center;
-    opacity: 0.85;
-    background-color: var(--accent1-color);
-    color: #fff;
+
+    opacity: 0.9;
+
+    background-color: rgba(27, 38, 49, 0.85);
+
+    color: #ffffff;
+
     font-size: 2rem;
     letter-spacing: 0.08em;
 }
 
-/* ── Hero article overlay ──────────────────────────────────── */
+/* Hero article overlay */
 .hero article {
     position: absolute;
+
     bottom: 20px;
     left: 20px;
+
     width: 55%;
-    background-color: rgba(26, 82, 118, 0.82);
-    color: #fff;
+
+    background-color: rgba(26, 82, 118, 0.85);
+
+    color: #ffffff;
+
     padding: 16px;
+
     border-left: 4px solid var(--accent2-color);
+
+    border-radius: 4px;
 }
 
+/* Article paragraph */
 .hero article p {
     margin: 0;
     padding: 0;
-    font-size: 0.88rem;
+
+    font-size: 0.9rem;
     line-height: 1.6;
+
     color: #eaf4fb;
 }
 
-/* ── Hero article image (floated) ──────────────────────────── */
+/* Hero article image */
 .hero article img {
     float: right;
+
     width: 125px;
+    height: auto;
+
     margin: 0 0 8px 12px;
+
     border: 3px solid var(--accent2-color);
     border-radius: 4px;
+
     position: static;
-    /* override the .hero img rule */
-    height: auto;
 }
 
-/* ── Sections ──────────────────────────────────────────────── */
+/* ── Sections ─────────────────────────────────────────────── */
 section {
-    background-color: #fff;
+    background-color: #ffffff;
+
     border-left: 4px solid var(--secondary-color);
+
     border-radius: 4px;
+
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+
+    margin-bottom: 20px;
 }
 
 section h2 {
     margin-bottom: 8px;
+
     font-size: 1.4rem;
+
     color: var(--primary-color);
 }
 
 section p {
     line-height: 1.7;
+
     font-size: 0.95rem;
 }
 
-/* ── Footer ────────────────────────────────────────────────── */
+/* ── Footer ───────────────────────────────────────────────── */
 footer {
     background-color: var(--accent1-color);
-    color: #ccc;
+
+    color: #cccccc;
+
     text-align: center;
+
     padding: 20px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
     gap: 12px;
 }
 
 footer p {
     margin: 0;
     padding: 0;
+
     font-size: 0.85rem;
-    color: #aab;
+
+    color: #d0d3d4;
 }
 
-/* ── Social media nav ──────────────────────────────────────── */
+/* ── Social Media ─────────────────────────────────────────── */
 .socialmedia {
     margin: 0;
     padding: 0;
+
     display: flex;
-    gap: 16px;
+    align-items: center;
+
+    gap: 18px;
 }
 
 .socialmedia a {
     text-decoration: none;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
+/* Social media icons */
 .socialmedia img {
     width: 32px;
     height: 32px;
-    filter: brightness(0) invert(1);
-    opacity: 0.75;
-    transition: opacity 0.2s;
+
+    opacity: 0.9;
+
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
+/* Hover effect */
 .socialmedia img:hover {
     opacity: 1;
+
+    transform: scale(1.1);
 }
