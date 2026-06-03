@@ -271,8 +271,12 @@ footer p {
     transform: scale(1.1);
 }
 
-/* ── History Section ──────────────────────────────────────── */
-.history-section {
+/* ── Shared Section Card Style ────────────────────────────── */
+.history-section,
+.adventure-section,
+.contact-info-section,
+.employees-section,
+.form-section {
     background-color: var(--white);
     border-left: 4px solid var(--secondary-color);
     border-radius: 4px;
@@ -281,12 +285,18 @@ footer p {
     margin-bottom: 20px;
 }
 
-.history-section h2 {
+.history-section h2,
+.adventure-section h2,
+.contact-info-section h2,
+.employees-section h2,
+.form-section h2 {
     text-align: center;
     font-size: 1.4rem;
     color: var(--primary-color);
     margin-bottom: 16px;
 }
+
+/* ── History Section ──────────────────────────────────────── */
 
 /* 3-column grid: text | image | text */
 .history-grid {
@@ -313,21 +323,6 @@ footer p {
 }
 
 /* ── Adventure Awaits Section ─────────────────────────────── */
-.adventure-section {
-    background-color: var(--white);
-    border-left: 4px solid var(--secondary-color);
-    border-radius: 4px;
-    box-shadow: 0 2px 6px var(--shadow);
-    padding: 20px 24px;
-    margin-bottom: 20px;
-}
-
-.adventure-section h2 {
-    text-align: center;
-    font-size: 1.4rem;
-    color: var(--primary-color);
-    margin-bottom: 16px;
-}
 
 /* 5-column image gallery */
 .adventure-gallery {
@@ -357,21 +352,6 @@ footer p {
 }
 
 /* ── Contact Info Section ─────────────────────────────────── */
-.contact-info-section {
-    background-color: var(--white);
-    border-left: 4px solid var(--secondary-color);
-    border-radius: 4px;
-    box-shadow: 0 2px 6px var(--shadow);
-    padding: 20px 24px;
-    margin-bottom: 20px;
-}
-
-.contact-info-section h2 {
-    text-align: center;
-    font-size: 1.4rem;
-    color: var(--primary-color);
-    margin-bottom: 16px;
-}
 
 /* 2-column grid: contact details | map */
 .contact-info-grid {
@@ -398,21 +378,6 @@ footer p {
 }
 
 /* ── Employees Section ────────────────────────────────────── */
-.employees-section {
-    background-color: var(--white);
-    border-left: 4px solid var(--secondary-color);
-    border-radius: 4px;
-    box-shadow: 0 2px 6px var(--shadow);
-    padding: 20px 24px;
-    margin-bottom: 20px;
-}
-
-.employees-section h2 {
-    text-align: center;
-    font-size: 1.4rem;
-    color: var(--primary-color);
-    margin-bottom: 16px;
-}
 
 /* 3-column employee grid */
 .employees-gallery {
@@ -443,21 +408,6 @@ footer p {
 }
 
 /* ── Contact Form Section ─────────────────────────────────── */
-.form-section {
-    background-color: var(--white);
-    border-left: 4px solid var(--secondary-color);
-    border-radius: 4px;
-    box-shadow: 0 2px 6px var(--shadow);
-    padding: 20px 24px;
-    margin-bottom: 20px;
-}
-
-.form-section h2 {
-    text-align: center;
-    font-size: 1.4rem;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-}
 
 .form-wrapper {
     display: flex;
